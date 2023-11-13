@@ -1,12 +1,10 @@
 # Fetch.ai_mainnet
 ![ALT-logo](https://raw.githubusercontent.com/MaxFoton/Fetch.ai_mainnet/main/Fetch.png)
 
-statesync service
-
 `Validator` Max Foton nodes
 
-`Delegate` https://www.mintscan.io/fetchai/validators/fetchvaloper1reqz9q7j5h7x39mmpqep720mxuxgrg5nxzmqma
 `Valoper` fetchvaloper1reqz9q7j5h7x39mmpqep720mxuxgrg5nxzmqma
+`Delegate` https://www.mintscan.io/fetchai/validators/fetchvaloper1reqz9q7j5h7x39mmpqep720mxuxgrg5nxzmqma
 
 **RPC**
 `RPC` http://95.165.89.222:26655/
@@ -14,7 +12,7 @@ statesync service
 **Peer**
 `Peer` 18c79856ef586d2e2dc910ac8b08ad0012d19c04@95.165.89.222:26656
 
-**Start whith state-sync**
+**Start from statesync**
 
 ```systemctl stop fetchd && fetchd tendermint unsafe-reset-all --home $HOME/.fetchd --keep-addr-book`
 curl https://raw.githubusercontent.com/MaxFoton/Fetch.ai_mainnet/main/addrbook.json > ~/.fetchd/config/addrbook.json```
